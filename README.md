@@ -14,7 +14,8 @@ This project scraps the hotels data from a given link for which the targetted si
 
 2. Clone project:
    ```bash
-   cd KabuKStyle-OTA\ Scraper/ (after downloading the project)
+   git clone https://github.com/aqsakhalid-1230/ota_scraper.git
+   cd ota_scraper 
    ```
 
 3. Set up a virtual environment:
