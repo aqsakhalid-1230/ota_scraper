@@ -1,0 +1,18 @@
+This project focuses on scraping hotel data from Trip.com using Python, Selenium, and BeautifulSoup. 
+The main goal is to automate the extraction of hotel information, such as hotel names, locations, room types, and prices, which are then saved into a CSV file for further analysis. 
+The approach involved using Selenium to automate the browser, load the webpage, and handle scrolling to dynamically load additional content. 
+BeautifulSoup was used to parse the HTML and extract relevant hotel details.
+
+
+## Challanges:
+
+One of the key challenges faced during this project was managing websites that rely on dynamic content loading, which required scrolling to load more listings. 
+This was addressed by implementing a scroll mechanism within Selenium that repeatedly scrolled to the bottom of the page until no new content was detected. 
+To scroll through the page and hit the end took so much time so scroll to the mid or less was added. If you want to see through the end or more data you can increase scroll time.
+
+Another challenge was ensuring that the scraper could handle proxies to avoid potential IP blocking by the website. 
+The scraper cycles through a list of proxies, switching between them during scraping to reduce the likelihood of being blocked. 
+I added three ports for proxies and switched between them throughout the process.
+Additionally, careful error handling was incorporated to ensure that the scraper remains robust, even when specific elements are missing or the page structure changes.
+
+This project demonstrates an effective strategy for scraping dynamically loaded content while handling common web scraping obstacles like pagination and proxy management.
